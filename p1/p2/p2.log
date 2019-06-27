@@ -1,0 +1,8 @@
+m2  INFO This is info from f3 function Entry
+m2  WARNING This is warn from f3 function
+m2  ERROR This is error from f3 function
+m2  INFO This is info from f3 function Exit
+m2  INFO This is info from f4 function Entry
+m2  WARNING This is warn from f4 function
+m2  ERROR This is error from f4 function
+m2  INFO This is info from f4 function Exit

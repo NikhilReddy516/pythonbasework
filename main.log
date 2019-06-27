@@ -1,0 +1,4 @@
+main  INFO This is info from main function Entry
+main  WARNING This is warn from main function
+main  ERROR This is error from main function
+main  INFO This is info from main function Exit

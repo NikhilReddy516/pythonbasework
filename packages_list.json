@@ -1,0 +1,7 @@
+{
+"Dependencies" : {
+  "beautifulsoup4":"4.4.1",
+  "boto":"2.48.0",
+  "Nik":"2.4.1"
+}
+}

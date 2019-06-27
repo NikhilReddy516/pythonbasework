@@ -1,0 +1,73 @@
+import logging
+
+LOG_SETTINGS = {
+
+	'version' : 1,
+
+    'handlers' : {
+
+		'consoleHandler' : {
+			'class' : 'logging.StreamHandler',
+			'level' : 'ERROR',
+			'formatter' : 'normal',
+			'stream' : 'ext://sys.stdout'
+
+		},
+
+		'fileHandler' : {
+			'class' : 'logging.fileHandlers.RotatingFileHandler',
+			'level' : 'INFO',
+			'formatter' : 'normal',
+			'filename' : '/p2.log',
+			'mode' : 'a',
+			'maxBytes' : 10485760
+		}
+
+    },
+
+    'formatters' : {
+		'breif' : {
+			'format' : '%(levelname)s %(message)s'
+		},
+		'normal' : {
+			'format' : '%(module)s line%(lineno)s %(levelname)s %(message)s'
+		}
+    },
+
+    'loggers' : {
+		'consoleLoggers' : {
+			'level' : 'ERROR',
+			'handlers' : ['consoleHandler']
+		},
+		'fileLogger' : {
+			'level' : 'INFO',
+			'handlers' : ['fileHandler']
+		}
+    }
+
+}
+
+logging.config.dictConfig(LOG_SETTING)
+
+consoleLogger = logging.getLogger('consoleLogger')
+fileLogger = logging.getLogger('fileLogger')
+
+
+
+def f3():
+
+	fileLogger.info('This is info from f3 function Entry')
+    fileLogger.warn('This is warn from f3 functoin')
+    consoleLogger.error('This is error from f3 function')
+    fileLogger.info('This is info from f3 function Exit')
+	return;
+
+
+
+
+def f4():
+    fileLogger.info('This is info from f4 function Entry')
+    fileLogger.warn('This is warn from f4 functoin')
+    consoleLogger.error('This is error from f4 function')
+    fileLogger.info('This is info from f4 function Exit')
+	return;

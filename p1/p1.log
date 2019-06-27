@@ -1,0 +1,16 @@
+m1 INFO This is info from f1 function Entry
+m1 WARNING This is warn from f1 function
+m1 ERROR This is error from f1 function
+m1 INFO This is info from f1 function Exit
+m1 INFO This is info from f2 function Entry
+m1 WARNING This is warn from f2 function
+m1 ERROR This is error from f2 function
+m1 INFO This is info from f2 function Exit
+m3  INFO This is info from f5 function Entry
+m3  WARNING This is warn from f5 function
+m3  ERROR This is error from f5 function
+m3  INFO This is info from f5 function Exit
+m4  INFO This is info from f6 function Entry
+m4  WARNING This is warn from f6 functoin
+m4  ERROR This is error from f6 function
+m4  INFO This is info from f6 function Exit
